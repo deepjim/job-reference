@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+       <meta name="viewport" content="user-scalable=no, width=device-width /">
+		<title>NumCrush-mode</title>
+               <link rel="stylesheet" href="css/main.css" type="text/css"/>
+				<script type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script>
+	
+	</head>
+
+	<body >
+	
+	<script>
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '451957804965646',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.3' // use version 2.3
+  });
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+  function fbLogout() {
+        FB.logout(function (response) {
+            alert("Successfully logged out from Facebook!")
+        });
+    } 
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "http://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));  
+</script>
+	
+
+	
+	<div id="tit">
+    <img src="numcrush/tit.png"  /><br/>	
+    </div>
+    <div id="r1">
+	
+	<button id="rlx" onclick= "location.href='relax.html'"><img src="numcrush/rlx.png"  /></button><br/>
+    <br/>
+    </div>
+   <div id="n1">
+    <button id="nor" onclick="location.href='normal.html'"><img src="numcrush/nor.png"  /></button><br/>
+     </div>
+     <div id="c1">
+    <button id="chl" onclick= "location.href='challenge.html'"><img src="numcrush/chl.png"  /></button><br/>
+     </div>
+     <div id="m1">
+    <button id="mlt" onclick="location.href='multi.html'"><img src="numcrush/mlt.png"  /></button><br/>
+    </div>	
+	<button id="fblogout" onclick="fbLogout(); location.href = 'main.html'"><img src="numcrush/logout_fb.png"></button> 
+    <div >	
+
+	<a id="logout"  href="logout.php" >	Log out</a> 
+	
+	<a id="profile" href="member.php">Profile</a> 
+	 <a  id="beta" href="beta_game.html" target="_parent">BETA by Deep</a> 
+	<a id="o1" href="option.html" target="_parent"><button id="optbt">
+	 <img src="numcrush/optbt.png"  /></button></a>
+   
+    </div> 
+
+    
+   <footer>
+   
+	</footer>
+    
+    
+	</body>
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width /">
+<title>TEST</title>
+<link rel="stylesheet" href="css/gmain_mob.css" type="text/css" media="only screen and (max-width:600px)"/>
+<link rel="stylesheet" href="css/beta_game.css" type="text/css" media="screen and (min-width:600px)"/>
+<script type="text/javascript" language="javascript" src="js/jquery-1.11.2.min.js"></script>
+
+</head>
+
+<body >
+
+
+<script  src="js/beta_game.js"></script>
+<div id="aa">
+
+<script type="text/javascript" language="javascript" src="js/jquery-1.11.2.min.js"></script>
+ <section id="setUp">
+            	<div id="bg"><button id="bg_audio" onClick="soundSet('bg')"></button></div>
+            	<div id="eff"><button id="ef_audio" onClick="soundSet('ef')"></button></div>
+                <div id="refresh"><button id="refreshGame" onClick=" location.reload()">Refresh</button></div>
+               
+	 Mode</button></a>
+			</section>
+
+<script language="javascript">
+    var nummap = new Array(11);
+    for(i=0; i <=11; i++) {nummap[i]=new Array(11);}
+    function buildnum() {
+    document.write("<div  id='gimg'>");
+    var i, j;
+	var imgdir="numcrush/blk/";
+	var elapsedTime = 30;
+	var timer = setInterval(countTimer,1000);
+	
+    for(i=0;i<=11;i++)
+    {
+        for(j=0;j<=11;j++)
+        {
+            k=parseInt(9*Math.random()+1);
+            imgpath=imgdir+k+".png";
+            str_element="<img alt="+k+" id="+(i*(12)+j)+" src="+imgpath+"   class='gnum'/>";
+			nummap[i][j]=k;
+			//alert(nummap[i][j]);
+            if(i==0||j==0||i==11||j==11)
+                str_element="<img id="+(i*(12)+j)+" src='numcrush/blk/1.png' width=0 height=0 dispaly='hidden'/>";
+            document.write(str_element);
+        }
+        document.write("<br/>");
+    }
+	}
+	buildnum();
+document.write("</div>");
+</script>
+</div>
+ 
+
+		
+<div >
+<img  id="tbar" src="numcrush/t2.png">
+
+</div>
+<div id="tgame" >
+
+<img onmousedown="innum(1)" id="gr1" src="numcrush/gn/1.png">
+<img onmousedown="innum(2)" id="gr2" src="numcrush/gn/2.png">
+<img onmousedown="innum(3)" id="gr3" src="numcrush/gn/3.png">
+</br>
+<img onmousedown="innum(4)" id="gr4" src="numcrush/gn/4.png">
+<img onmousedown="innum(5)" id="gr5" src="numcrush/gn/5.png">
+<img onmousedown="innum(6)" id="gr6" src="numcrush/gn/6.png">
+</br>
+<img onmousedown="innum(7)" id="gr7" src="numcrush/gn/7.png">
+<img onmousedown="innum(8)" id="gr8" src="numcrush/gn/8.png">
+<img onmousedown="innum(9)" id="gr9" src="numcrush/gn/9.png">
+</div>
+<div id="data">
+<div  onmousedown="calscore()" id="sc">   <span  id="score">Crush!!</span></div></br>
+<div id="fev">     <span  id="fever">0.00%</span></div></br>
+<div id="tra"><span id="trail">trail</span></div>
+</div>
+<form name="getsc" action="recordscore.php" method="post"> 
+<input type="hidden" name="scoree" value=""> 
+</form> 
+<footer>
+<audio id="audio_other" autoplay="autoplay"></audio>
+<audio id="audio_bg" autoplay="autoplay" loop></audio>
+<audio id="audio_alarm" autoplay="autoplay"></audio>
+
+</footer>
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.3.min.js"></script>
+</body>
+</html>
