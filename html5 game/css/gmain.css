@@ -1,0 +1,243 @@
+body{
+    /*background-image:url("../numcrush/gbg.png");*/
+    background-repeat:no-repeat;
+	background-color:black;
+    width:480px;
+	height:800px;
+}
+
+#tit
+{
+    margin-top :80px;
+}
+#login
+{
+    background-image:url("../numcrush/log.png");
+    background-repeat:no-repeat;
+ margin-left: 50px;   
+ margin-bottom: 10px; 
+width:240px;
+
+ padding: 10px 100px 50px 100px ;
+}
+
+input[type="text"]
+{
+    background-color:transparent;
+    font-size:23px;
+    border-color:Black;
+    color:yellow;
+	margin-bottom:10px;
+}
+
+input[type="password"]
+{
+    background-color:transparent;
+    font-size:23px;
+    border-color:Black;
+    color:yellow;
+	margin-bottom:10px;
+	
+}
+
+#str
+{
+background-color:transparent;
+margin-top:40px;
+border-color:transparent;
+margin-left:-60px
+}
+
+#fb,#rlx,#nor,#chl,#mlt,#optbt,#ret4
+{
+background-color:transparent;
+border-color:transparent;
+}
+
+#r1
+{
+    padding: 10px 0 0 120px;
+}
+#n1
+{
+    padding: 10px 0 0 90px;
+}
+#c1
+{
+    padding: 10px 0 0 60px;
+}
+#m1
+{
+    padding: 10px 0 0 20px;
+}
+#o1
+{
+    
+	margin-left:280px;
+}
+
+#vne 
+{
+    background-image:url("../numcrush/opt1.png");
+    background-repeat:no-repeat;
+  
+ 
+
+ padding:10px 0 400px 0;
+}
+#volume
+{
+padding: 138px 0 65px 95px;
+}
+#effect
+{
+padding: 10px 0 0 95px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background:transparent;
+    height:14px;
+    
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-image:url("../numcrush/scl.png");
+    height:40px;
+    width:15px;
+    
+    
+}
+#rank,#help,#about
+{
+    background-color:transparent;
+    border-color:transparent;
+}
+#rank
+{
+padding: 10px 0 0 150px;
+}
+#help
+{
+padding: 0px 0 0 150px;
+}
+#about
+{
+padding: 5px 0 0 140px;
+}
+#credits{
+width: 400px;
+padding: 50px 0 0 40px;
+}
+#help1{
+width: 400px;
+padding: 0 0 0 40px;
+}
+#ret1{
+ background-color:transparent;
+    border-color:transparent;
+	margin-left:370px;
+}
+#ret2{
+ background-color:transparent;
+    border-color:transparent;
+	margin-left:370px;
+	margin-top:70px;
+}
+#ret3{
+ background-color:transparent;
+    border-color:transparent;
+	padding-left:380px;
+	padding-top:35px;
+}
+#signup{
+font-size: 20px;
+color:yellow;
+}
+#reg{
+ margin-left:50px;
+ margin-top:50px;
+width:340px;
+background-color:orange;
+border-color:yellow;
+ border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+	border-radius: 22px;
+ padding: 40px 0 50px 10px ;
+  background-image:url("../numcrush/n1.jpg"); 
+    background-repeat:no-repeat;
+	box-shadow: 10px 10px 5px orange;
+
+}
+#regid,#regpw,#regpw2,#confirm{
+font-size:23px;
+}
+#reg1{
+font-size:30px;
+}
+#confirm{
+background-color:yellow;
+
+}
+#regbo{
+border-color:yellow;
+}
+
+#id{
+margin-bottom:30px;
+}
+#logout{
+font-size:20px;
+color:yellow;
+margin-left:20px;
+}
+#ret4{
+margin-left:380px;
+margin-top:30px;
+}
+
+#tgame{
+	margin-top: 85px;
+	margin-left:20px;
+}
+#tbar{
+margin-top:12px;
+margin-left:7px;
+}
+
+#gr1{
+margin-top:12px;
+margin-left:33px;
+}
+#gr2,#gr3,#gr5,#gr6,#gr8,#gr9{
+margin-left:6px;
+}
+#gr4,#gr7{
+margin-top:6px;
+margin-left:33px;
+}
+#score,#fever{
+font-size:25px;
+color:yellow;
+}
+#sc{
+float:right;
+margin-top:39px;
+margin-right:66px;
+}
+#fev{
+float:right;
+margin-top:43px;
+margin-right:75px;
+}
+#tra{
+float:right;
+margin-top:46px;
+margin-right:63px;
+}
+#trail{
+color:yellow;
+}
+
